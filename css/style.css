@@ -1,0 +1,237 @@
+/*****                    RESET CSS                  *****/
+html{color:#222;margin:0;padding:0;}h1,h2,h3,h4,h5,h6 {font-weight: normal;}header a{text-decoration: none;}body,ul{padding:0;margin:0;scroll-behavior: smooth;}li{list-style: none;}::-moz-selection{background: #b3d4fc;text-shadow: none;}::selection {background: #b3d4fc;text-shadow: none;}hr {display: block;height: 1px;border: 0;border-top: 1px solid #ccc;margin: 1em 0;padding: 0;}audio,canvas,iframe,img,svg,video{vertical-align: middle;}fieldset {border: 0;margin: 0;padding: 0;}textarea {resize: vertical;}.hidden,[hidden] { display: none !important;}.visually-hidden {border: 0;clip: rect(0, 0, 0, 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;white-space: nowrap;width: 1px;}.visually-hidden.focusable:active,.visually-hidden.focusable:focus {clip: auto;height: auto;margin: 0;overflow: visible;position: static;white-space: inherit;width: auto;}.invisible {visibility: hidden;}a,a:visited {text-decoration: underline;}abbr[title]::after {  content: " (" attr(title) ")";}a[href^="#"]::after,a[href^="javascript:"]::after {  content: "";}pre,blockquote {  border: 1px solid #999;  page-break-inside: avoid;}tr,img {  page-break-inside: avoid;}p,h2,h3 {  orphans: 3;  widows: 3;  margin: 0;}h2,h3 {  page-break-after: avoid;}* {  position: relative;  outline: none;font-family: monospace sans-serif;-webkit-font-smoothing: antialiased;padding: 0;box-sizing: border-box;margin: 0;word-break: break-word;-webkit-appearance: none;-moz-appearance: none;appearance: none;}body::-webkit-scrollbar{width:0;}table{border-spacing:0}
+/*****                FIN RESET CSS                  *****/
+
+
+
+/*********/
+/*General*/
+/*********/
+*{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/************/
+/*Formulario*/
+/************/
+
+#content-form {
+    background: linear-gradient(90deg, rgba(245,61,38,1) 0%, rgba(233,131,49,1) 34%, rgba(214,171,39,1) 52%, rgba(198,206,30,1) 75%, rgba(175,255,18,1) 100%);
+    width: 90%;
+    margin:  0 auto 100px;
+    padding: 50px 50px 100px;
+}
+#content-form form {
+    max-width: 600px;
+    margin: auto;
+}
+#content-form form input, #content-form form textarea, #content-form form #boton {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #222;
+}
+#content-form form #boton {
+    background-color: white;
+    padding: 5px;
+}
+#content-form form textarea {
+    border: 1px solid #222;
+    padding: 5px;
+    height: 100px;
+}
+#content-form form input::placeholder, #content-form form textarea::placeholder {
+    color: #222;
+}
+#content-form #respuesta {
+    text-align: center;
+}
+
+/********/
+/*Header*/
+/********/
+header div a picture,header div,header div a {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    
+}
+header {
+    width: fit-content;
+    padding: 10px 20px;
+    margin: auto;
+}
+header,ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+header ul li a {
+    color: rgb(255, 185, 55);
+}
+header img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#respuesta {
+    height: 50px;
+    margin-top: 20px;
+}
+
+
+/*************/
+/*Main Banner*/
+/*************/
+.big-boy {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
+}
+.big-boy img {
+    width: 100%;
+}
+
+
+
+/***********/
+/*Contenido*/
+/***********/
+.content {
+    text-align: center;
+    margin: 100px 0;
+    padding: 0 20px;
+}
+.content p {
+    margin: auto;
+    max-width: 1200px;
+    margin-bottom: 15px;
+}
+span.rainbow-line {
+    display: block;
+    width: calc(100% - 30px);
+    height: 10px;
+    margin: 80px auto;
+    max-width: 1400px;
+    background: linear-gradient(90deg, rgba(245,61,38,1) 0%, rgba(233,131,49,1) 34%, rgba(214,171,39,1) 52%, rgba(198,206,30,1) 75%, rgba(175,255,18,1) 100%);
+}
+.content h2,footer h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.container-parent{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch;
+}
+.container-parent article {
+    max-width: calc(33% - 150px);
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+.container-parent article picture {
+    display: block;
+    margin-bottom: 20px;
+}
+.container-parent article img {
+    max-width: 100%;
+}
+.container-parent article h3 {
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.container-picture{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin: auto;
+}
+.container-picture img { 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    transition-duration: .3s;
+
+
+}
+.container-picture:hover img {
+    cursor: pointer;
+}
+
+
+
+/******************************/
+/*Página de consumo energético*/
+/******************************/
+#consumo-energetico-page .container-parent picture,#consumo-energetico-page .container-parent div {
+    width: 50%;
+}
+#consumo-energetico-page .container-parent picture img{
+    width: 100%;
+}
+#consumo-energetico-page .container-parent{
+    max-width: 1200px;
+    margin: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] { 
+    -moz-appearance:textfield; 
+}
+
+
+/********/
+/*Footer*/
+/********/
+footer picture {
+    display: block;
+    width: 100%;
+}
+footer picture img {
+    width: 100%;
+}
+
+
+
+
+/***************/
+/*Adpatabilidad*/
+/***************/
+@media (max-width: 767px) {
+    .container-parent{
+        flex-wrap: wrap;
+    }
+    .container-parent article {
+        max-width: 100%;
+    }
+}
+@media (max-width: 1023px) {
+    .container-parent article {
+        max-width: 100%;
+    }
+    #consumo-energetico-page .container-parent{
+        flex-wrap: wrap;
+    }
+    #consumo-energetico-page .container-parent picture,#consumo-energetico-page .container-parent div {
+        width: 100%;
+    }
+}
